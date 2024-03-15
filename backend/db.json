@@ -1,0 +1,22 @@
+{
+  "pensamentos": [
+    {
+      "id": "1",
+      "conteudo": "Que bom  que você veio",
+      "autoria": "Nay",
+      "modelo": "modelo1"
+    },
+    {
+      "id": "2",
+      "conteudo": "EStudando Amgular",
+      "autoria": "Nay",
+      "modelo": "modelo2"
+    },
+    {
+      "id": "3",
+      "conteudo": "Agnular é o melhor",
+      "autoria": "Nay",
+      "modelo": "modelo3"
+    }
+  ]
+}

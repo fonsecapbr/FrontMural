@@ -1,3 +1,4 @@
+import { Pensamento } from './../Pnsamento.';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./pensamento.component.css'],
 })
 export class PensamentoComponent implements OnInit {
-  @Input() pensamento = {
+  @Input() pensamento: Pensamento = {
+    id: 0,
     conteudo: 'I Love Angular',
     autoria: 'Nay',
     modelo: 'modelo3',
@@ -16,17 +18,11 @@ export class PensamentoComponent implements OnInit {
 
   ngOnInit(): void {}
 
-
-larguraPensamento():string{
-  if (this.pensamento.conteudo.length > 256)
-  {
-    return 'pensamento-g'
+  larguraPensamento(): string {
+    if (this.pensamento.conteudo.length > 256) {
+      return 'pensamento-g';
+    } else {
+      return 'pensamento-p';
+    }
   }
-  else{
-    return 'pensamento-p'
-  }
-
-
-}
-
 }
