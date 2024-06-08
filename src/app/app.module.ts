@@ -1,4 +1,4 @@
-import { NgModule, HttpClientModule } from '@angular/core';
+import { NgModule, } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +10,7 @@ import { CriarPensamentosComponent } from './componentes/pensamentos/criar-pensa
 import { FormsModule } from '@angular/forms';
 import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pensamento/listar-pensamento.component';
 import { PensamentoComponent } from './componentes/pensamentos/pensamento/pensamento.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { PensamentoComponent } from './componentes/pensamentos/pensamento/pensam
     CriarPensamentosComponent,
     ListarPensamentoComponent,
     PensamentoComponent,
+
 
   ],
   imports: [

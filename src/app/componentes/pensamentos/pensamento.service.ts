@@ -1,17 +1,22 @@
-import { Injectable } from "@angular/core";
-import { ListarPensamentoComponent } from "./listar-pensamento/listar-pensamento.component";
+import { Injectable } from '@angular/core';
+//import { ListarPensamentoComponent } from './listar-pensamento/listar-pensamento.component';
+import { HttpClient } from '@angular/common/http';
+import { Pensamento } from './Pensamento.';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
-
-
 export class PensamentoService {
-  private readonly API= 'http://localhost:3000/pensamentos'
+  private readonly API = 'http://localhost:3000/pensamentos';
 
-  constructor() {
+  constructor(private http: HttpClient) {}
 
+  listar(): Observable<Pensamento[]> {
+    return this.http.get<Pensamento[]>(this.API);
+  }
 
-  ListarPensamentoComponent
+  criar(pensamento: Pensamento): Observable<Pensamento> {
+    return this.http.post<Pensamento>(this.API, pensamento);
   }
 }

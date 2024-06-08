@@ -12,7 +12,7 @@
       class="input"
       name="pensamento"
       id="pensamento"
-      placeholder="Digite o pensmaento"
+      placeholder="Digite o pensamento"
       [(ngModel)]="pensamento.conteudo"
     />
   </form>
@@ -24,7 +24,7 @@
       name="autoria"
       id="autoria"
       placeholder="Digite a autoria ou fonte"
-      [(ngModel)]="pensamento.atutoria"
+      [(ngModel)]="pensamento.autoria"
     />
     <label for="modelo">Selecione o modelo do card:</label>
     <div class="container-radio">
@@ -46,7 +46,7 @@
         <div class="modelo modelo1 ff- -roboto-mono">
           <img src="../../../../assets/Imagens/modelo1.png" alt="Aspas azuis" />
           <p class="conteuto">{{ pensamento.conteudo }}</p>
-          <p class="aturoria"><b></b> {{ pensamento.atutoria }}</p>
+          <p class="aturoria"><b></b> {{ pensamento.autoria }}</p>
         </div>
       </div>
       <div class="radio-modelo">
@@ -70,7 +70,7 @@
             alt="Aspas azuis claro"
           />
           <p class="conteuto">{{ pensamento.conteudo }}</p>
-          <p class="aturoria"><b></b> {{ pensamento.atutoria }}</p>
+          <p class="aturoria"><b></b> {{ pensamento.autoria }}</p>
         </div>
       </div>
       <div class="radio-modelo">
@@ -94,15 +94,13 @@
             alt="Aspas azuis verdes"
           />
           <p class="conteuto">{{ pensamento.conteudo }}</p>
-          <p class="aturoria"><b></b> {{ pensamento.atutoria }}</p>
+          <p class="aturoria"><b></b> {{ pensamento.autoria }}</p>
         </div>
       </div>
     </div>
     <div class="acoes">
       <button (click)="criarPensamento()" class="botao">Salvar</button>
-      <button (click)="cancelar()" routerLink="/listarPensamento" class="botao">
-        Cancelar
-      </button>
+      <button (click)="cancelar()" class="botao">Cancelar</button>
     </div>
   </form>
 </section>

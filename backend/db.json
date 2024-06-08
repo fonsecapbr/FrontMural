@@ -2,7 +2,7 @@
   "pensamentos": [
     {
       "id": "1",
-      "conteudo": "Que bom  que você veio",
+      "conteudo": "Que bom  que você veio!!",
       "autoria": "Nay",
       "modelo": "modelo1"
     },
@@ -17,6 +17,36 @@
       "conteudo": "Agnular é o melhor",
       "autoria": "Nay",
       "modelo": "modelo3"
+    },
+    {
+      "id": "5a2b",
+      "conteudo": "Apredendo angular 02",
+      "autoria": "Dev 02",
+      "modelo": "modelo3"
+    },
+    {
+      "id": "3691",
+      "conteudo": "Apredendo angular 02",
+      "autoria": "Dev 02",
+      "modelo": "modelo3"
+    },
+    {
+      "id": "9b52",
+      "conteudo": "Apredendo angular 02",
+      "autoria": "Dev 02",
+      "modelo": "modelo2"
+    },
+    {
+      "id": "6b90",
+      "conteudo": "Apredendo angular 03",
+      "autoria": "Dev 03",
+      "modelo": "modelo1"
+    },
+    {
+      "id": "4227",
+      "conteudo": "Apredendo angular 123",
+      "autoria": "Dev 123",
+      "modelo": "modelo2"
     }
   ]
 }
