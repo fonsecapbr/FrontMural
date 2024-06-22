@@ -8,6 +8,7 @@ import { PensamentoService } from '../pensamento.service';
   styleUrls: ['./listar-pensamento.component.css'],
 })
 export class ListarPensamentoComponent implements OnInit {
+
   listaPensamento: Pensamento[] = [];
 
   constructor(private service: PensamentoService) {}
